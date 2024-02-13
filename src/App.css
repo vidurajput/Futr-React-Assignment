@@ -1,0 +1,601 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* navbar */
+.App-header {
+  position: relative;
+  /* Set relative positioning for the header */
+
+}
+
+.headername {
+  position: absolute;
+  /* Set absolute positioning for the headername */
+  top: 20px;
+  /* Adjust vertical position */
+  left: 20%;
+  /* Adjust horizontal position */
+}
+
+.upNav {
+  position: absolute;
+  /* Set absolute positioning for the upNav */
+  top: 0px;
+  /* Adjust vertical position */
+  right: 0px;
+  /* Adjust horizontal position */
+  display: flex;
+  /* Use flexbox to arrange child elements */
+  margin-bottom: 40px;
+}
+
+.Address,
+.Phone,
+.Mail {
+  background-color: white;
+  /* Set background color to white */
+  padding-right: 10px;
+
+}
+
+.Address img,
+.Phone img,
+.Mail img {
+  margin: 25px 25px 10px 10px;
+}
+
+nav {
+  position: absolute;
+  /* Set absolute positioning for the nav */
+  top: 70%;
+  /* Position the nav at the vertical center */
+  right: 15%;
+  /* Position the nav at the right side */
+  transform: translateY(-50%);
+  /* Adjust vertical alignment */
+  padding: 10px 20px;
+  /* Add padding for better readability */
+}
+
+.navbar-brand {
+  margin-right: 10px;
+  /* Add margin between navbar links */
+  color: white;
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 20px;
+  /* Set font size */
+  padding-right: 10px;
+}
+
+.navbar-brand:hover {
+  color: black;
+}
+
+
+.navbar {
+  margin-top: 0;
+}
+
+
+
+/* form */
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.form-container {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 60%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line */
+  justify-content: space-between; /* Distribute items evenly */
+  width: 70%;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  margin-bottom: 10px; /* Add space between form controls */
+  width: 90%; /* Make inputs fill the entire width */
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+margin-bottom: 10px;
+}
+
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black color with 50% opacity */
+}
+
+.container .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: blue;
+  font-weight: bold;
+  font-size: 80px;
+  z-index: 1;
+}
+
+.container .text span {
+  color: white;
+}
+
+.container .button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  /* margin-top: 5px; */
+  z-index: 100;
+  padding: 10px 20px;
+  border-radius: 17px;
+  cursor: pointer; 
+  position: absolute;
+}
+
+.FormButton{
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  margin-top: 50px;
+  z-index: 10000;
+  padding: 5px 60px 5px 60px;
+  cursor: pointer; 
+  position: absolute;
+  right: 50px;
+}
+
+
+
+
+/* journey */
+.journey {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.journey h1 {
+  margin-bottom: 20px;
+}
+
+.journey text {
+  margin-bottom: 20px;
+}
+
+.journey-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.journey-container .box {
+  border: 1px solid #00008b;
+  /* Dark blue border */
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  /* Required for positioning the image */
+}
+
+.journey-container img {
+  position: relative;
+  right: 30%;
+  width: 40%;
+}
+
+.journey button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 17px;
+  cursor: pointer;
+
+}
+
+.outer-box {
+  background: linear-gradient(113.3deg, rgb(134, 209, 228) -1.8%, rgb(60, 80, 115) 86.4%);
+  width: 560px;
+  height: 350px;
+  position: relative;
+  margin: 30px auto;
+
+}
+
+.inner-box {
+  background-color: white;
+  width: 490px;
+  height: 280px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.text {
+  color: black;
+  text-align: left;
+}
+
+.image {
+  position: absolute;
+  top: 40%;
+  left: 118%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 1;
+  /* Ensure image is above inner box */
+
+}
+
+
+
+
+
+
+/* OFFERS */
+
+.offers {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offers h1 {
+  margin-bottom: 20px;
+}
+
+.offers button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+.offers p {
+  margin-bottom: 30px;
+}
+
+.offers-travel {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+}
+
+.offers-travel>div {
+  text-align: center;
+}
+
+.offers-travel img {
+  width: 80%;
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.offers-travel h3 {
+  margin-bottom: 10px;
+}
+
+.offers-travel p {
+  margin-bottom: 10px;
+}
+
+
+
+
+/* things */
+
+.things {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.things h1 {
+  margin-bottom: 20px;
+}
+
+.things p {
+  margin-bottom: 20px;
+  max-width: 65.5%;
+  /* Limit the width of the paragraph */
+  text-align: center;
+}
+
+.things img {
+  width: calc(100% - 40px);
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+
+
+
+
+/* places */
+.places {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.places h1 {
+  margin-bottom: 20px;
+}
+
+.places p {
+  margin-bottom: 10px;
+  max-width: 61%;
+  /* Limit the width of the paragraph */
+  text-align: center;
+}
+
+.places-container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 20%;
+  margin: 30px;
+}
+
+.places-container img {
+  margin: 5px;
+}
+
+.circle-container {
+  display: flex;
+  /* justify-content: start; */
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* Ensures the divs are circular */
+  margin-right: 20px;
+  /* Adds space between the circles */
+
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+/* guide */
+.guide {
+  position: relative;
+  text-align: center;
+}
+
+.guide img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.guide h1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+}
+
+.guide-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  color: white;
+}
+
+.guide-container div {
+  margin-bottom: 30px;
+}
+
+.guide-container button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 17px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+
+
+
+/* blog */
+
+
+.blog {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog h1 {
+  margin-bottom: 20px;
+}
+
+.blog p {
+  margin-bottom: 20px;
+}
+
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 30%;
+  margin: 20px;
+}
+
+
+.blog-container img {
+  margin: 10px;
+  height: auto;
+}
+
+.blog-container .left {
+  text-align: left;
+  color: lightblue;
+}
+
+.blog-container .right {
+  text-align: right;
+}
+
+.blog-container .right>span {
+  color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer {
+  text-align: center;
+  background-color: #0C2340;
+  color: white;
+  padding: 50px 0;
+
+}
+
+.icons {
+  display: flex;
+  float: left;
+  margin-left: 19%;
+
+}
+
+.icons img {
+  width: 10px;
+  margin-right: 20px;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us,
+.links,
+.contact-form {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.contact-form form {
+  width: 150%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+  /* Remove margin for the last form group */
+}
+
+.form-group.textarea {
+  width: 100%;
+  /* Set textarea width to 100% */
+}
+
+.submit-btn {
+  background-color: black;
+  /* Set background color of the submit button to black */
+  color: white;
+  float: right;
+  /* Align button to the right */
+  font-size: 15px;
+}
+
+
